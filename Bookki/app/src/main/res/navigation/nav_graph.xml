@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/libraryListFragment">
+
+
+    <fragment
+        android:id="@+id/libraryListFragment"
+        android:name="com.example.bookki.ui.LibraryListFragment"
+        android:label="fragment_library_list"
+        tools:layout="@layout/fragment_library_list">
+        <action
+            android:id="@+id/action_libraryListFragment_to_libraryInfoFragment"
+            app:destination="@id/libraryInfoFragment" />
+        <action
+            android:id="@+id/action_libraryListFragment_to_libraryMapFragment"
+            app:destination="@id/libraryMapFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/libraryMapFragment"
+        android:name="com.example.bookki.ui.LibraryMapFragment"
+        android:label="fragment_library_map"
+        tools:layout="@layout/fragment_library_map">
+        <action
+            android:id="@+id/action_libraryMapFragment_to_libraryListFragment2"
+            app:destination="@id/libraryListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/libraryInfoFragment"
+        android:name="com.example.bookki.ui.LibraryInfoFragment"
+        android:label="fragment_library_info"
+        tools:layout="@layout/fragment_library_info" >
+        <action
+            android:id="@+id/action_libraryInfoFragment_to_libraryListFragment"
+            app:destination="@id/libraryListFragment" />
+        <action
+            android:id="@+id/action_libraryInfoFragment_to_SearchBooksFragment"
+            app:destination="@id/SearchBooksFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SearchBooksFragment"
+        android:name="com.example.bookki.ui.SearchBooksFragment"
+        android:label="fragment_search_books"
+        tools:layout="@layout/fragment_search_books" >
+
+        <action
+            android:id="@+id/action_SearchBooksFragment_to_libraryInfoFragment"
+            app:destination="@id/libraryInfoFragment" />
+    </fragment>
+
+</navigation>
