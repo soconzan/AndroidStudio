@@ -7,7 +7,7 @@
 - 인기 대출 도서 목록
 - 소장 도서 검색
 
-###### 사용 API
+#### 사용 API
 - 대구광역시 공공도서관 스마트도서관 도서검색서비스 Open API 사용  
-  (🔗 https://www.data.go.kr/data/15125628/openapi.do)
+  🔗 https://www.data.go.kr/data/15125628/openapi.do
 - 스마트도서관 위치 제공을 위한 Google Maps API 사용
